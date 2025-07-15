@@ -1,0 +1,131 @@
+* {
+  /* margin: 0 auto; */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  /* keep... */
+  /* overflow-x: hidden; */
+  transition: all 0.3s ease-in-out;
+  background-color: #e8dcc363 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #4a5d4e !important;
+  font-weight: 700;
+}
+
+/* Sign Up */
+.intro-container {
+  padding: 1.5em;
+  margin: 3em;
+  max-width: 550px;
+  margin-inline: auto;
+  text-align: center;
+  background-color: transparent;
+}
+
+body h1 {
+  margin: 0;
+  color: #4a5d4e;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+p {
+  /* margin: 0.8em 0; */
+  /* idk where the margins are coming from... */
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Form */
+.back-to {
+  text-align: left;
+  margin: 2em 0 0 2em;
+}
+
+.form-container {
+  position: absolute;
+  /* keep.  The body is set to relative */
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* use left & transform to center the div */
+  /* bottom: 5%; */
+  background-color: #7a9a7639;
+  border-radius: 12px;
+}
+
+.form-row {
+  /* position: ; */
+  /* height: 100%; */
+  /* width: 30%; */
+  margin: 0 auto;
+}
+
+.form-row {
+  max-width: 550px;
+}
+
+form {
+  margin: 2em;
+}
+
+.input-group {
+  width: 100%;
+}
+
+#email,
+#password,
+#confirm-password,
+#phone {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.5em;
+  margin: 0.3em;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #4a5d4e7e;
+  border: solid 2px #0000006b;
+  border-radius: 12px;
+}
+
+::placeholder {
+  color: #000000d5;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.5em;
+  margin: 1em 0.3em 0;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #4a5d4e;
+  border: solid 2px #0000006b;
+  border-radius: 12px;
+}
+
+@media (max-width: 650px) {
+  .intro-container {
+    background-color: #7a9a7639;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .form-container {
+    margin: 3em;
+    background-color: transparent;
+  }
+
+  p {
+    margin-inline: auto;
+  }
+}
